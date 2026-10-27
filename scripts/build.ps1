@@ -23,6 +23,7 @@ try {
  $packages=[ordered]@{}
  foreach($row in @(@('push','MyPush.exe','MyPush.exe'),@('push-LICENSE','LICENSE','licenses/MyPush-LICENSE'),@('push-NOTICE','NOTICE','licenses/MyPush-NOTICE'),@('push-THIRD-PARTY-LICENSES.txt','THIRD-PARTY-LICENSES.txt','licenses/MyPush-THIRD-PARTY-LICENSES.txt'))){$file=Join-Path $Out $row[1];$packages[$row[0]]=@{file=$row[2];asset=$row[1];size=(Get-Item -LiteralPath $file).Length;sha256=(Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLowerInvariant()}}
  $manifest=@{schema=2;integration=3;repository='oneworkspacestudio/my-push';tag="v$Version";minimumManager='0.3.0-preview.94';requiredCapabilities=@('self-hosted-push-v1');apps=@($app);packages=$packages}
- [IO.File]::WriteAllText((Join-Path $Out 'workspace-app-update.json'),($manifest|ConvertTo-Json -Depth 8))
+ [IO.File]::WriteAllText((Join-Path $Out 'workspace-update.json'),($manifest|ConvertTo-Json -Depth 8))
+ Copy-Item -LiteralPath (Join-Path $Out 'workspace-update.json') -Destination (Join-Path $Out 'workspace-app-update.json') -Force
  Get-FileHash -LiteralPath (Join-Path $Out 'MyPush.exe'),(Join-Path $Out 'MyPush-linux-amd64') -Algorithm SHA256
 }finally{Pop-Location}

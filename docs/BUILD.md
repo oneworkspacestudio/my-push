@@ -25,7 +25,7 @@ Build matching Chat source with its local `scripts/workspace/build.py` or the
 existing runtime payload and Go `postgres,workspace` tags. Never deploy stale
 runtime ZIPs or publish a source-dirty development binary as an immutable release.
 
-My Push's `compatibility.json` and generated `workspace-app-update.json` specify
+My Push's `compatibility.json` and generated `workspace-update.json` specify
 the integration contract. The app manifest requires the new manager capability
 `self-hosted-push-v1`; a current old manager must not install it prematurely.
 The full bundle accepts MyPush payload/notices through `scripts/build.ps1`.
