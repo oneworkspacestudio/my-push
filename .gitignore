@@ -1,0 +1,6 @@
+/dist/
+/data/
+*.exe
+*.key
+*.log
+*.syso

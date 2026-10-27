@@ -1,0 +1,10 @@
+My Push is part of One Workspace.
+Copyright 2026 One Workspace contributors.
+
+Real-time transport: Centrifuge v0.40.1, copyright Centrifugal contributors,
+MIT license. Upstream https://github.com/centrifugal/centrifuge
+Pinned commit: 79c893e8692d5caf29e4c1e5983191e6e5ee3530
+
+Workspace application host and branding: Apache-2.0.
+Firebase is a Google product. My Push is an independent implementation inspired
+by its console navigation; it is not Firebase or a Firebase API replacement.
