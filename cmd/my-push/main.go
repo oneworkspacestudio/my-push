@@ -26,7 +26,7 @@ func main() {
 		}
 		os.Args = append(os.Args, "--data", filepath.Join(root, "OneWorkspace", "MyPush"))
 	}
-	if e := apphost.Main(apphost.Config{ID: "push", Name: "My Push", Version: version, Listen: "127.0.0.1:9019", Realtime: true}, webui.Files(), func(h *apphost.Host) (apphost.Application, error) { return app.New(h) }); e != nil {
+	if e := apphost.Main(apphost.Config{ID: "push", Name: "My Push", Version: version, Listen: "127.0.0.1:9021", Realtime: true}, webui.Files(), func(h *apphost.Host) (apphost.Application, error) { return app.New(h) }); e != nil {
 		apphost.Report(e)
 		os.Exit(1)
 	}
