@@ -97,3 +97,32 @@ Permanent Android signing key outside Git. No physical sleep/reboot/action or
 full-suite Linux acceptance claim. Builds/publishing remain local, Actions off.
 Release My Push1, Chat11, Workspace94; preserve Maps8/MyAI14/Tasks4 pins. Deployment
 receipts to be added after normal protected owner updates; no owner fixture use.
+
+## Published and installed, 27 October
+
+My Push2 source23161db is public with Windows/Linux x64 binaries, canonical
+workspace-update.json (legacy alias retained), complete pinned dependency licence
+texts and SHA256 receipts. Preview1 is withheld in Workspace's channel before
+owner installation; its9019 catalogue port conflicted with My AI. Current9021 /
+managed base+31 is distinct. All13 Push2 uploaded assets match local size/digest.
+Public dependency remains Workspace206ee30425f3, no sibling replacements.
+
+Workspace94/Chat11/Android2 are published without Actions. Final binary tests
+pass scoped authorization/queue/expiry/revocation and16 native/public HTTPS
+protocol checks, including server publish ACK, native sync/reply and fresh browser
+session restoration. An optimistic direct-fallback message is not a server ACK;
+the acceptance harness explicitly waits for commit before expecting a wake.
+Console SSO/navigation/branding and390px no-overflow checks pass on real synthetic
+service data. Primary owner PC now runs94/11/2, all28 services healthy; credentials,
+settings and unselected executable bytes retained. Normal protected update adds
+Push automatically; fixture also proves26 explicit app exclusions retained.
+
+Android release-signed2 is installed and its phone APK hash equals the public
+Workspace94 asset. App closed/Appium session deleted. Physical notification,
+reply, sleep/reboot tests still blocked by locked phone. Secondary deployment
+still pending owner MyAccounts sign-in. Do not claim both PCs/device acceptance.
+Synthetic C state and all task preview services/tunnels were removed; permanent
+release key is protected outside Git. Recreate fresh synthetic state for phone
+acceptance; never use owner data as a fixture. Linux x64 cross-build passed, no
+Linux machine/service or whole-suite Linux claim. Delivery evidence:
+https://github.com/oneworkspacestudio/one-workspace/blob/main/docs/ANDROID-DELIVERY.json
